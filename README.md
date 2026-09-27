@@ -3,6 +3,15 @@
   <h1>Pokedex Web</h1>
 </div>
 
+<p align="center">
+  <img src="http://img.shields.io/static/v1?label=status&message=in%20progress&color=GREEN" alt="In progress">
+  <img src="https://img.shields.io/npm/v/package" alt="npm-version">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-563d7c?style=flat&logo=css3&logoColor=white" alt="CSS3">
+</p>
+
+
 Aplicação web que utiliza a PokeAPI para consultar informações de Pokémon e apresentar os dados na interface do usuário.
 
 Este projeto foi criado com a finalidade de estudos em desenvolvimento web com HTML e CSS, consumo de APIs e organização de páginas web.
