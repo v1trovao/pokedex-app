@@ -1,23 +1,21 @@
-<header style="display: flex; justify-content: center; align-items: center; gap: 16px; font-size: 50px; color: #e2817b;">
-    Pokedex Web
-    <img src="assets/pidjhin.jpg" height=70>
-</header>
+<div align="center">
+  <img src="assets/pidjhin.jpg" height="70" alt="Pidjhin">
+  <h1>Pokedex Web</h1>
+</div>
 
-
-## Sobre
 Aplicação web que utiliza a PokeAPI para consultar informações de Pokémon e apresentar os dados na interface do usuário.
 
 Este projeto foi criado com a finalidade de estudos em desenvolvimento web com HTML e CSS, consumo de APIs e organização de páginas web.
 
 ## Funcionalidades
 
-- Visualizar lista: A tela inicial contêm a lista dos pokémons da primeira geração, o usuário consegue visualizar no formato grade, com informações de nome, imagem, tipos e ID da pokedex. 
+- **Visualizar lista**: A tela inicial contêm a lista dos pokémons da primeira geração, o usuário consegue visualizar no formato grade, com informações de nome, imagem, tipos e ID da pokedex. 
 
-- Visualizar detalhes: ao clicar em um pokemon, é carregado uma janela com mais informações sobre um pokemon. 
+- **Visualizar detalhes**: ao clicar em um pokemon, é carregado uma janela com mais informações sobre um pokemon. 
 
-- Buscar pokemon: O usuário pode pesquisar pokemons pelo nome na barra de busca. A pagina é alterada dinamicamente ao inserir os caracteres de busca. 
+- **Buscar pokemon**: O usuário pode pesquisar pokemons pelo nome na barra de busca. A pagina é alterada dinamicamente ao inserir os caracteres de busca. 
 
-- Filtrar dados: O usuário pode aplicar filtros por tipo ou geração específica.
+- **Filtrar busca**: O usuário pode aplicar filtros na barra de busca por tipo ou geração específica.
 
 ### Expansões:
 - Servidor de base
@@ -45,19 +43,19 @@ Este projeto foi criado com a finalidade de estudos em desenvolvimento web com H
 
 1. Clonar repositório
 ```
-git clone
+git clone https://github.com/v1trovao/pokedex-app
 ```
 2. Navegar até a pasta
 ```
-cd poke_api
+cd pokedex-app
 ```
 
-3. Executar comando para carregamento dos dados
+3. Executar comando para carregamento dos dados (opcional)
 ```
-node src/scripts/dataset
+node run load
 ```
 
-3. Abra o projeto com a extensão Live Server do VsCode.
+4. Abra o projeto com a extensão Live Server do VsCode.
 
 ## Conceitos trabalhados
 - Desenvolver páginas com HTML e CSS
@@ -67,7 +65,7 @@ node src/scripts/dataset
 - Consumo de APIs
 - JSON
 
-## Desafios
+### Desafios
 - Reduzir a quantidade de requisições à API
 - Organizar a estrutura dos dados
 - Estruturar o código para facilitar manutenção
