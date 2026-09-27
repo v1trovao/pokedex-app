@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex etc</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <div id="header-container" class="ui red inverted segment">
+        <div class="ui secondary menu">
+            <h1 id="header-text"> Pokedex </h1>
+        </div>
+    </div>
+
+    
+    <div id="searchInput">
+        <input id='pokemonName' type="text" placeholder="Buscar pokemon..." oninput="searchPokemonByName()">
+    </div>
+
+    <!-- Filtros -->
+    <div class="filterBox"> 
+    <!-- Teste Multiselect 
+        <div class="select-btn">
+            <span class="btn-text">Types</span>
+            <span class="arrow-dwn">
+                <img src="/assets/chevron-down-solid.png">
+            </span>
+        </div>
+
+        <ul class="list-items" id="filterSelect">
+            <li class="item" id="grass">
+                <span class="checkbox">
+                    <img class="check-icon" src="assets\square-check-solid-full.svg">
+                </span>
+                <span class="item-text">Grass</span>
+            </li>
+
+            <li class="item" id="fire">
+                <span class="checkbox">
+                    <img class="check-icon" src="assets\square-check-solid-full.svg">
+                </span>
+                <span class="item-text">Fire</span>
+            </li>
+
+            <li class="item" id="water">
+                <span class="checkbox">
+                    <img class="check-icon" src="assets\square-check-solid-full.svg">
+                </span>
+                <span class="item-text">Water</span>
+            </li>
+
+            <li class="item" id="poison">
+                <span class="checkbox">
+                    <img class="check-icon" src="assets\square-check-solid-full.svg">
+                </span>
+                <span class="item-text">Poison</span>
+            </li>
+
+        </ul> -->
+
+        
+        <!--Teste do select -->
+        <div id="filterTypes">
+            Tipos:
+            <select id="selectFilter" aria-placeholder="tipos">
+                <option value="all">All</option>
+                <option value="grass">Grass</option>
+                <option value="poison">Poison</option>
+                <option value="fire">Fire</option>
+                <option value="water">Water</option>
+                <option value="normal">Normal</option>
+                <option value="flying">Flying</option>
+                <option value="bug">Bug</option>
+                <option value="rock">Rock</option>
+                <option value="ground">Ground</option>
+                <option value="electric">Electric</option>
+                <option value="psychic">Psychic</option>
+                <option value="dark">Dark</option>
+                <option value="poison">Poison</option>
+                <option value="steel">Steel</option>
+                <option value="ghost">Ghost</option>
+                <option value="fighting">Fighting</option>
+                <option value="fairy">Fairy</option>
+                <option value="dragon">Dragon</option>
+                <option value="ice">Ice</option>
+            </select>  
+        </div>
+
+        <div id="filterGen">
+            Region:
+            <select id="selectGen">
+                <option value="i">Kanto</option>
+                <option value="ii">Johto</option>
+                <option value="iii">Hoenn</option>
+                <option value="iv">Sinnoh</option>
+                <option value="v">Unova</option>
+                <option value="vi">Kalos</option>
+                <option value="vii">Alola</option>
+                <option value="viii">Galar</option>
+                <option value="ix">Paldea</option>
+            </select>
+        </div>
+    </div>
+    
+
+    <div id="container">
+        <div id="poke-container" class="ui cards">
+            
+        </div>
+    </div>
+
+    <!-- Janela do Modal dos Cards Pokemon-->
+    <div class="modal">
+
+        <!-- Conteúdo do Modal -->
+        <div class="modal-card">
+            
+            <span class="fechar">x</span>
+            <div class="card-header">
+                <h3 id="pokeId">
+                    #<span id="modal-card-id"></span> 
+                </h3>
+                <span id="modal-card-name" ></span>
+                <img id="modal-img">
+                <span id="modal-card-genus"></span>
+                <span id="modal-card-types" class="type-box"></span>
+            </div>
+            
+            <div class=poke-info id="pokeInfo"></div>
+            
+        </div>
+    </div>
+    
+    <script src="./src/main.js"></script>
+</body>
+</html>

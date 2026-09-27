@@ -1,0 +1,494 @@
+:root {
+    --grass: #5FBD58;
+    --poison: #B763CF;
+    --fire: #EC8146;
+    --water: #539AE2;
+    --flying: #7DA6DE;
+    --electric: #E5C531;
+    --fighting: #CB5F48;
+    --bug: #94BC4A;
+    --dark: #736C75;
+    --ghost: #846AB6;
+    --ground: #CC9F4F;
+    --ice: #70CBD4;
+    --normal: #AAB09F;
+    --fairy: #E397d1;
+    --psychic: #E5709B;
+    --rock: #B2A061;
+    --steel:#89A1B0;
+    --dragon: #6A7bAF;
+    --unknown: #81a596;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #D3D3D3;
+}
+
+#container {
+    margin: auto;
+}
+
+#searchInput {
+    margin: auto;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+#poke-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 82.5rem;
+    margin: 3rem auto;
+    gap: 3rem;
+    padding: 10px;
+    color:black;
+}
+
+.poke-card {
+    text-align: center;
+    background-color: rgba(241, 239, 239, 0.65);
+    border-radius: 10px;
+    width: 10rem;
+    height: 20rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    display: block;
+}
+
+.pokeImg {
+    background-color: rgba(241, 239, 239, 0.95);
+}
+
+
+#header-container {
+    margin: 0;
+    border-radius: 0px !important;
+    background-color: #49D0B0;
+}
+
+#header-text{
+    margin: 0 auto;
+}
+
+#generate-pokemon {
+    margin: 0 auto;
+}
+
+#delete-btn {
+    position: absolute;
+    left: 85%;
+    display: none;
+    margin-bottom: 5%;
+}
+
+/* Teste do modal*/
+.modal {
+    display: none;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow:auto;
+    background-color:rgba(0, 0, 0, 0.5)
+}
+
+.modal .modal-card {
+    background-color: #D3D3D3;
+    /* margin vertical -> horizontal */
+    margin: 3rem auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 600px;
+    /*display: flex;*/
+    /*flex-direction:column;*/
+    /*align-items: center;*/
+    position: relative;
+    display: flex;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+
+.poke-info{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0;
+    padding: 10px;
+    background-color: rgba(241, 239, 239, 0.65);
+    align-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    max-height: 20.5rem;
+    scrollbar-width:thin;
+}
+
+.poke-dim {
+    flex: 1;
+    min-width: 100px;
+    background-color: rgba(241, 239, 239, 0.65);
+    border: 0.2px solid;
+    border-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 auto 0;
+    padding: 2%;
+    width: 9.5rem;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.poke-values {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 10px;
+}
+
+.poke-value {
+    list-style-type: none;
+    font-weight: 500;
+    margin: 0 10px 0;
+}
+
+.poke-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    justify-content: center;
+    max-width: 20rem;
+    background-color: rgba(241, 239, 239, 0.65);
+}
+
+.poke-stats .stat-row {
+    font-weight: bold;
+    padding: 0 2rem;
+}
+
+.poke-stats .stat-value {
+    padding: 0 0;
+}
+
+.poke-desc {
+    padding: 0.2;
+    margin: 1rem auto 1rem;
+    background-color: rgba(238, 234, 234, 0.2);
+    border: 3px solid #f0f0f0;
+    border-top-color:rgba(0, 0, 0, 0.2);
+    border-left-color: rgba(185, 17, 17, 0.2);
+    border-right-color: rgba(185, 17, 17, 0.2);
+    border-bottom-color:rgba(0, 0, 0, 0.2);
+    border-top-width: 1px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.filterBox {
+    display: flex;
+    position: relative;
+    max-width: 20rem;
+    width: 100%;
+    margin: 10px auto 10px;
+    padding: 10px auto 10px;
+    justify-content: space-between;
+}
+
+.select-btn {
+    margin: 10px auto 10px;
+    display: flex;
+    height: 50px;
+    /*centralização*/
+    align-items: center;
+    /*espaçamento*/
+    justify-content: space-between;
+    padding: 0 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.5)
+}
+
+.select-btn .btn-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333
+}
+
+.select-btn .arrow-dwn {
+    display: flex;
+    height: 21px;
+    width: 21px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    background:#6e93f7;
+    justify-content: center;
+    transition: 0.3s;
+}
+.select-btn.open .arrow-dwn {
+    transform: rotate(-180deg);
+}
+
+.select-btn.open ~ .list-items {
+    display: block;
+
+    /* animation, pq o -webkit e sem -webkit? */
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-duration:0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-duration:0.4s;
+    -webkit-animation-fill-mode: both;
+}
+
+.list-items {
+    position: absolute;
+    max-width: 320px;
+    box-sizing: border-box;
+    margin-top: 3.2rem;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.5);
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    animation-duration: 0.35s;
+    animation-fill-mode: both;
+    -webkit-animation-duration:0.35s;
+    -webkit-animation-fill-mode:both;
+}
+
+.list-items .item {
+    display: flex;
+    align-items: center;
+    list-style:none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+
+/* quando o mouse tiver em cima*/
+.list-items .item:hover {
+    background-color: #e3f2fd;
+}
+
+.item .item-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.item .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    /* a checkbox aqui visível*/
+    border: 1.5px solid #c0c0c0;
+    transition: all 0.3s ease-in-out;
+}
+
+.item.checked .checkbox {
+    background-color: #fff;
+    border-color: #4070f4;
+}
+
+/* quando o checkbox é clicado */
+.item.checked .check-icon {
+    transform: scale(2);
+}
+
+/* estado inicial do checkbox */
+.checkbox .check-icon {
+    color: #fff;
+    font-size: 13px;
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Animação de mostrar os items*/
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 30px, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        display: block;
+    }
+}
+
+/* Animação quando items são recolhidos*/
+@keyframes fadeInDown {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 20px, 0);
+        opacity: 0;
+        display: none;
+    }
+}
+
+.type-box {
+    list-style-type: none;
+    display: flex;
+    padding: 0 1rem;
+    justify-items:center;
+    align-items: center;
+    gap: 5px;
+}
+
+.poke-type {
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    margin: 10px auto 10px;
+}
+
+.poke-ability {
+    list-style-type: none;
+}
+
+.grass{
+   background: var(--grass);
+}
+
+.poison{
+    background: var(--poison);
+}
+
+.fire{
+    background: var(--fire);
+}
+
+.water{
+    background-color: var(--water);
+}
+
+.flying{
+    background-color: var(--flying);
+}
+
+.electric{
+    background-color: var(--electric);
+}
+
+.fighting{
+    background-color: var(--fighting);
+}
+
+.bug{
+    background-color: var(--bug);
+}
+
+.dark{
+    background-color: var(--dark);
+}
+
+.ghost{
+    background-color: var(--ghost);
+}
+
+.ground{
+    background-color: var(--ground);
+}
+
+.ice{
+    background-color: var(--ice);
+}
+
+.normal{
+    background-color: var(--normal);
+}
+
+.fairy{
+    background-color: var(--fairy);
+}
+
+.psychic{
+    background-color: var(--psychic);
+}
+
+.rock{
+    background-color: var(--rock);
+}
+
+.steel{
+    background-color: var(--steel);
+}
+
+.dragon{
+    background-color: var(--dragon);
+}
+.unknown {
+    background-color: var(--unknown);
+}
+
+.select {
+    overflow: auto;
+    overflow-y: scroll;
+}
+
+/* Cadeia Evolutiva */
+.evolution-chain {
+    display: flex;
+    flex-direction: column;  /* itens na vertical */
+    margin: 10px 10px;
+    align-items: center;     /* mesma altura central*/
+    gap: 16px;               /* espaço entre os itens*/
+    width: 100%;
+}
+
+/* Estágios de evolução */
+/*.stage-group {
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1.5px solid #b8242494;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); / colunas adaptáveis ao width /
+    gap: 12px;
+    justify-items: center;
+    width: 100%;
+}*/
+
+.stage-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+
+.stage-group .poke-card {
+    width: auto;
+    height: auto;
+    min-width: 100px;
+}
+
+.poke-card.current {
+    cursor:default;
+    background-color: var(--fire);
+}
+
+.stage-group .poke-card .pokeImg {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}

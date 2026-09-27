@@ -1,0 +1,440 @@
+[
+  {
+    "id": 1,
+    "name": "bulbasaur",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "stats": [
+      {
+        "nome": "hp",
+        "valor": 45
+      },
+      {
+        "nome": "attack",
+        "valor": 49
+      },
+      {
+        "nome": "defense",
+        "valor": 49
+      },
+      {
+        "nome": "special-attack",
+        "valor": 65
+      },
+      {
+        "nome": "special-defense",
+        "valor": 65
+      },
+      {
+        "nome": "speed",
+        "valor": 45
+      }
+    ],
+    "abilities": [
+      "overgrow",
+      "chlorophyll"
+    ],
+    "height": 7,
+    "weight": 69,
+    "generation": "i",
+    "color": "green",
+    "habitat": "grassland",
+    "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.",
+    "evolutionChain": [
+      {
+        "pokemon": "bulbasaur",
+        "stage": 1,
+        "current": true,
+        "evolution_details": {}
+      },
+      {
+        "pokemon": "ivysaur",
+        "stage": 2,
+        "current": false,
+        "evolution_details": {
+          "is_default": true,
+          "min_level": 16,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "version_group": {
+            "name": "red-blue",
+            "url": "https://pokeapi.co/api/v2/version-group/1/"
+          }
+        }
+      },
+      {
+        "pokemon": "venusaur",
+        "stage": 3,
+        "current": false,
+        "evolution_details": {
+          "is_default": true,
+          "min_level": 32,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "version_group": {
+            "name": "red-blue",
+            "url": "https://pokeapi.co/api/v2/version-group/1/"
+          }
+        }
+      }
+    ],
+    "genus": "Seed Pokémon"
+  },
+  {
+    "id": 2,
+    "name": "ivysaur",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+    "stats": [
+      {
+        "nome": "hp",
+        "valor": 60
+      },
+      {
+        "nome": "attack",
+        "valor": 62
+      },
+      {
+        "nome": "defense",
+        "valor": 63
+      },
+      {
+        "nome": "special-attack",
+        "valor": 80
+      },
+      {
+        "nome": "special-defense",
+        "valor": 80
+      },
+      {
+        "nome": "speed",
+        "valor": 60
+      }
+    ],
+    "abilities": [
+      "overgrow",
+      "chlorophyll"
+    ],
+    "height": 10,
+    "weight": 130,
+    "generation": "i",
+    "color": "green",
+    "habitat": "grassland",
+    "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+    "evolutionChain": [
+      {
+        "pokemon": "bulbasaur",
+        "stage": 1,
+        "current": false,
+        "evolution_details": {}
+      },
+      {
+        "pokemon": "ivysaur",
+        "stage": 2,
+        "current": true,
+        "evolution_details": {
+          "is_default": true,
+          "min_level": 16,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "version_group": {
+            "name": "red-blue",
+            "url": "https://pokeapi.co/api/v2/version-group/1/"
+          }
+        }
+      },
+      {
+        "pokemon": "venusaur",
+        "stage": 3,
+        "current": false,
+        "evolution_details": {
+          "is_default": true,
+          "min_level": 32,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "version_group": {
+            "name": "red-blue",
+            "url": "https://pokeapi.co/api/v2/version-group/1/"
+          }
+        }
+      }
+    ],
+    "genus": "Seed Pokémon"
+  },
+  {
+    "id": 3,
+    "name": "venusaur",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+    "stats": [
+      {
+        "nome": "hp",
+        "valor": 80
+      },
+      {
+        "nome": "attack",
+        "valor": 82
+      },
+      {
+        "nome": "defense",
+        "valor": 83
+      },
+      {
+        "nome": "special-attack",
+        "valor": 100
+      },
+      {
+        "nome": "special-defense",
+        "valor": 100
+      },
+      {
+        "nome": "speed",
+        "valor": 80
+      }
+    ],
+    "abilities": [
+      "overgrow",
+      "chlorophyll"
+    ],
+    "height": 20,
+    "weight": 1000,
+    "generation": "i",
+    "color": "green",
+    "habitat": "grassland",
+    "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+    "evolutionChain": [
+      {
+        "pokemon": "bulbasaur",
+        "stage": 1,
+        "current": false,
+        "evolution_details": {}
+      },
+      {
+        "pokemon": "ivysaur",
+        "stage": 2,
+        "current": false,
+        "evolution_details": {
+          "is_default": true,
+          "min_level": 16,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "version_group": {
+            "name": "red-blue",
+            "url": "https://pokeapi.co/api/v2/version-group/1/"
+          }
+        }
+      },
+      {
+        "pokemon": "venusaur",
+        "stage": 3,
+        "current": true,
+        "evolution_details": {
+          "is_default": true,
+          "min_level": 32,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "version_group": {
+            "name": "red-blue",
+            "url": "https://pokeapi.co/api/v2/version-group/1/"
+          }
+        }
+      }
+    ],
+    "genus": "Seed Pokémon"
+  },
+  {
+    "id": 4,
+    "name": "charmander",
+    "types": [
+      "fire"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+    "stats": [
+      {
+        "nome": "hp",
+        "valor": 39
+      },
+      {
+        "nome": "attack",
+        "valor": 52
+      },
+      {
+        "nome": "defense",
+        "valor": 43
+      },
+      {
+        "nome": "special-attack",
+        "valor": 60
+      },
+      {
+        "nome": "special-defense",
+        "valor": 50
+      },
+      {
+        "nome": "speed",
+        "valor": 65
+      }
+    ],
+    "abilities": [
+      "blaze",
+      "solar-power"
+    ],
+    "height": 6,
+    "weight": 85,
+    "generation": "i",
+    "color": "red",
+    "habitat": "mountain",
+    "description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
+    "evolutionChain": [
+      {
+        "pokemon": "charmander",
+        "stage": 1,
+        "current": true,
+        "evolution_details": {}
+      },
+      {
+        "pokemon": "charmeleon",
+        "stage": 2,
+        "current": false,
+        "evolution_details": {
+          "is_default": true,
+          "min_level": 16,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "version_group": {
+            "name": "red-blue",
+            "url": "https://pokeapi.co/api/v2/version-group/1/"
+          }
+        }
+      },
+      {
+        "pokemon": "charizard",
+        "stage": 3,
+        "current": false,
+        "evolution_details": {
+          "is_default": true,
+          "min_level": 36,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "version_group": {
+            "name": "red-blue",
+            "url": "https://pokeapi.co/api/v2/version-group/1/"
+          }
+        }
+      }
+    ],
+    "genus": "Lizard Pokémon"
+  },
+  {
+    "id": 5,
+    "name": "charmeleon",
+    "types": [
+      "fire"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+    "stats": [
+      {
+        "nome": "hp",
+        "valor": 58
+      },
+      {
+        "nome": "attack",
+        "valor": 64
+      },
+      {
+        "nome": "defense",
+        "valor": 58
+      },
+      {
+        "nome": "special-attack",
+        "valor": 80
+      },
+      {
+        "nome": "special-defense",
+        "valor": 65
+      },
+      {
+        "nome": "speed",
+        "valor": 80
+      }
+    ],
+    "abilities": [
+      "blaze",
+      "solar-power"
+    ],
+    "height": 11,
+    "weight": 190,
+    "generation": "i",
+    "color": "red",
+    "habitat": "mountain",
+    "description": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
+    "evolutionChain": [
+      {
+        "pokemon": "charmander",
+        "stage": 1,
+        "current": false,
+        "evolution_details": {}
+      },
+      {
+        "pokemon": "charmeleon",
+        "stage": 2,
+        "current": true,
+        "evolution_details": {
+          "is_default": true,
+          "min_level": 16,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "version_group": {
+            "name": "red-blue",
+            "url": "https://pokeapi.co/api/v2/version-group/1/"
+          }
+        }
+      },
+      {
+        "pokemon": "charizard",
+        "stage": 3,
+        "current": false,
+        "evolution_details": {
+          "is_default": true,
+          "min_level": 36,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "version_group": {
+            "name": "red-blue",
+            "url": "https://pokeapi.co/api/v2/version-group/1/"
+          }
+        }
+      }
+    ],
+    "genus": "Flame Pokémon"
+  }
+]
