@@ -26,7 +26,7 @@ Este projeto foi criado com a finalidade de estudos em desenvolvimento web com H
 
 - **Filtrar busca**: O usuário pode aplicar filtros na barra de busca por tipo ou geração específica.
 
-### Expansões:
+### Expansões
 - Servidor de base
 - Opção de favoritos
 - Comparador de Pokemon
